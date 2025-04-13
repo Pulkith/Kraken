@@ -1,66 +1,10 @@
-## Foundry
+## Kraken 
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+Couple of Major Notes:
+- (1) We built it all on 0g! However, there recently was a massive spike in gas fees which made the testnet difficult to use with quantity of tokens from the facuets. As a result, we made an off-chain database to replicate the on-chain smart contracts and data storage. We didn't get new tokens until the day of the demo, so we weren't able to re-integrate it back onchain, but all the code and necessary requirements are there, and it can easily be redone in a couple more hours. 
+- (2) A lot of the news data is way to big to store on github, so we have it locally. We kept the NY Times data for your reference on what it looks like, but we have almost 30GB of data for the full application.
+- (3) Please put the necessary API keys in the .env file to run the application!
 
-Foundry consists of:
+Thanks!
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
-
-## Documentation
-
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+[Slidedeck](https://www.canva.com/design/DAGkNH6rVUo/U04izSQ9-NtXbWpBBK3Hmg/view?utm_content=DAGkNH6rVUo&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha172340372)
